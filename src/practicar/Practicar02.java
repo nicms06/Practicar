@@ -30,16 +30,14 @@ public class Practicar02{
 			n = sc.nextInt();
 		}
 		
-		for(i = 0; i <= n; i++) {
-			
-			sol = i + sol;
-			
+		sc.close();
+		
+		for(i = 0; i <= n; i++) {	
+			sol += i ;
 		}
 		
 		System.out.println("La suma de todos los numeros hasta " + n + " es: " + sol);
 				
-		sc.close();		
-
 	}
 
 }

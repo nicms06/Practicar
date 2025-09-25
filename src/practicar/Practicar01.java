@@ -14,7 +14,7 @@ public class Practicar01 {
 		int i;
 		
 		//Creo un bucle que genere los numeros del 1 al 10
-		for(i = 0; i < 11; i++) {
+		for(i = 1; i < 11; i++) {
 			System.out.println(i);
 		}
 				

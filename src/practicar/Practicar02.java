@@ -10,18 +10,33 @@ public class Practicar02{
 		
 		Scanner sc = new Scanner(System.in);
 		
-		//Declaro las variables que voy a usar
+		//Declaro las variable n que será el número que le pediremos al usuario
 		int n;
+		
+		//La variable i será la que usaremos para crear el bucle
 		int i;
+		
+		//Esta variable será la suma de todos los números (toda la suma)
+		int sol = 0;
 		
 		//Le pido al usuario un número
 		System.out.println("Introduzca un valor mayor que 0: ");
+		n = sc.nextInt();
 		
 		//Hago un buble para asegurarme que el usuario escribe un número mayor a 0
-		while(i<=0) {
+		while(n<=0) {
 			
+			System.out.println("El número debe de ser mayor que 0, inténtelo de nuevo: ");
+			n = sc.nextInt();
+		}
+		
+		for(i = 0; i <= n; i++) {
+			
+			sol = i + sol;
 			
 		}
+		
+		System.out.println("La suma de todos los numeros hasta " + n + " es: " + sol);
 				
 		sc.close();		
 

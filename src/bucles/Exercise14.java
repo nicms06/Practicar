@@ -27,8 +27,10 @@ public class Exercise14 {
 		System.out.print("Introduzca num: ");
 		num = sc.nextInt();
 		
-		//El número debe de ser mayor que 1
-		while (num < 1) {
+		//El número debe de ser mayor que 1. Cuando sea menor, dará un error y volerá a pedir números hasta qu
+		while (num <= 1) {
+			System.out.print("ERROR. El número debe de ser mayor que 1: ");
+			//Volvemos a pedir el número
 			
 		}
 		

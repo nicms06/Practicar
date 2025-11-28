@@ -31,7 +31,26 @@ public class Exercise14 {
 		while (num <= 1) {
 			System.out.print("ERROR. El número debe de ser mayor que 1: ");
 			//Volvemos a pedir el número
+			num = sc.nextInt();
+		}
+		
+		//Creamos un bucle for que se encargará de los saltos de línea
+		for (int i = 0; i < num; i++) {
 			
+			//Creamos un bucle para dibujar la figura
+			for (int j = 0; j < num/2; j++) {
+				
+				//Si i es impar dibujaremos "# " y si es par dibujaremos " #"
+				if (i % 2 ==0) {
+					System.out.print("# ");
+				}
+				else {
+					System.out.print(" #");
+				}
+				
+			}
+		
+			System.out.println();
 		}
 		
 		//Cerramos el Scanner
